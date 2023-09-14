@@ -54,6 +54,10 @@ h1, p {
      
 }
 
+.centreville {
+    font-size: 16px;
+}
+
 label {
     background-color: #F2F2F2;
     width: 50px;
@@ -159,6 +163,13 @@ fa-solid fa-info {
 main {
     padding-top: 200px;
 }
+
+.hebergements img {
+    width: 15%;
+    height: 90px;
+    /*object-fit:f ?????*/
+}
+
 
 
 
