@@ -65,7 +65,10 @@ label {
 }
 
 .location {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
 }
 
 
@@ -109,7 +112,38 @@ input {
     border-radius: 15px;
 }
 
+.filtres {
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    
+}
 
+button {
+    background-color: white;
+    border-color: #D9D9D9;
+    border-radius: 25px;
+    width: 173px;
+    height: 50px;
+    border-style: solid;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+button:after {
+    background-color: #DEEBFF;
+}
+
+button:hover {
+    background-color: #DEEBFF;
+}
+
+fa-solid fa-info {
+    border-style: solid;
+    border-radius: 1px;
+}
 
 
 
