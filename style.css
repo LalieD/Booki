@@ -13,20 +13,30 @@
     color: var(--main-color);
 }
 
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
-    display: flex;
     width: 61.09px;
     height: 19px;
+}
+
+header a {
+    margin-top: 30px;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     gap: 50px;
-    padding-right: 50px;
-
 }
 
 nav a {
@@ -41,7 +51,7 @@ nav a:after {
     height: 2px;
     width: 0;
     left: 0;
-    top: -27px;
+    top: -40px;
 }
 
 nav a:hover:after{
@@ -52,14 +62,8 @@ nav a:hover:after{
     color: #0065FC;
 }
 
-
 h1 {
-    margin-top: -70px;
-}
-
-h1, p {
-    padding-left: 50px;
-     
+    margin-top: -130px;
 }
 
 .centreville {
@@ -67,22 +71,21 @@ h1, p {
 }
 
 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F2F2F2;
     width: 50px;
     height: 49px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
-    
 }
 
 .location {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
-
 
 .search {
     border-right-style: none;
@@ -91,9 +94,7 @@ label {
     font-size: 16px;
     font-weight: 700;
     color: black;
-    border-color: #F2F2F2;
-    
-    
+    border-color: #F2F2F2;   
 }
 
 ::placeholder {
@@ -112,7 +113,6 @@ label {
 
 form {
     display: flex;
-    padding-left: 50px;
     padding-top: 30px;
     width: 377px;
     height: 49px;
@@ -125,9 +125,11 @@ input {
 }
 
 .filtres {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     font-weight: 700;
     font-size: 18px;
-    padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 33px;      
 }
@@ -157,7 +159,19 @@ fa-solid fa-info {
 }
 
 .info {
+    display: flex;
+    align-items: center;
     padding-bottom: 33px;
+}
+
+.borderinfo {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: #D9D9D9 solid 1px;
 }
 
 .main-container {
