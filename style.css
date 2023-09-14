@@ -38,7 +38,7 @@ nav a:after {
     height: 2px;
     width: 0;
     left: 0;
-    top: -10px;
+    top: -27px;
 }
 
 nav a:hover:after{
@@ -54,12 +54,53 @@ h1, p {
      
 }
 
+label {
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    
+}
+
+.location {
+    text-align: center;
+}
 
 
+.search {
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 0%;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border-color: #F2F2F2;
+    
+    
+}
+
+::placeholder {
+    color: black;
+}
+
+.submit {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    background-color: #0065FC;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border-color: #0065FC;
+}
 
 form {
     display: flex;
     padding-left: 50px;
+    padding-top: 30px;
+    width: 377px;
+    height: 49px;
 }
 
 input {
