@@ -131,7 +131,7 @@ input {
     font-weight: 700;
     font-size: 18px;
     padding-top: 50px;
-    padding-bottom: 33px;      
+    padding-bottom: 33px;     
 }
 
 button {
@@ -143,6 +143,11 @@ button {
     border-style: solid;
     font-weight: 700;
     font-size: 17px;
+    
+}
+
+button i {
+    padding-right: 12px;
 }
 
 button:after {
@@ -172,6 +177,7 @@ fa-solid fa-info {
     align-items: center;
     border-radius: 50px;
     border: #D9D9D9 solid 1px;
+    margin-right: 16px;
 }
 
 .main-container {
@@ -207,8 +213,6 @@ a {
     object-fit: cover;
     width: 100%;
     height: 115px;
-   
-
 }
 
 .card-title {
@@ -238,17 +242,11 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 871px;
-    height: 614px;
+    width: 65%;
 }
 
 .hebergements .section-title {
     padding-bottom: 33px;
-}
-
-.hebergements .card {
-    width: 250.33px;
-    height: 207.25px;    
 }
 
 .hebergements img {
@@ -269,13 +267,23 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 30px;
+    row-gap: 30px;   
 }
+
+
+
+
+
+/*card???*
+flex-direction: row;
+    flex-wrap: wrap;
+
+
+
 
 /****** Populaires ***********/
 .populaires {
-    width: 429px;
-    height: 614px;
+    width: 32%;
 }
 
 .populaires-title {
