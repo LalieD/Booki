@@ -259,6 +259,7 @@ a {
 .afficher {
     font-weight: 700;
     font-size: 18px;
+    padding-top: 25px;
 }
 
 .hebergements-cards {
@@ -273,12 +274,6 @@ a {
 .hebergements .card-content {
     padding-left: 10px;
 }
-
-.afficher {
-    padding-top: 25px;
-}
-
-
 
 /*card???*
 flex-direction: row;
@@ -334,32 +329,68 @@ flex-direction: row;
     margin-bottom: 5px;
 }
 
-
-
-
-
-
-
-
 .activites-title {
     margin-top: 80px;
+    margin-bottom: 50px;
 }
+
+.activites {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .card-activites {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding-bottom: 15px;
 }
 
 .card-activites img {
     width: 297.5px;
     height: 380px;
     object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
+.card-title-activites {
+    padding-left: 20px;
+    font-size: 16px;
+}
 
+.basdepage {
+    background-color: var(--main-bg-color);
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
 
+.titre-footer {
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-top: 15px;
+}
 
+.liste {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 15px;
+}
+
+.apropos {
+    margin-left: 50px;
+}
+
+.assistance {
+    margin-right: 50px;
+}
 
 
 
