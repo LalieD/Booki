@@ -18,7 +18,7 @@
 <body>
     <header>
         <a href="index.html" class="lien-icone">
-            <img class=logo src="images/Bookilogo.png" alt="Logo Booki">
+            <img id=logo src="images/Bookilogo.png" alt="Logo Booki">
         </a>
         <nav>
             <a class="navbar" href="#hebergements">Hébergements</a>
@@ -27,7 +27,7 @@
     </header>
     <main>
         <div>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1 id="mainTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="centreville">En plein centre-ville ou en pleine nature</p>
         </div>
         <form action="" method="get">
@@ -37,16 +37,17 @@
                 </span>
             </label>
             <input type="search" name="recherche" class="search" placeholder="Marseille, France">
-            <input type="submit" class="submit" value="Rechercher">
-            <button class="button-magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button type="submit" class="button-magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i><div>Rechercher</div></button>
         </form>
         <!--Ajouter l'icône de la loupe pour la version mobile-->
-        <div class="filtres">
+        <div id="filters">
             <h2>Filtres</h2>
-            <button><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-            <button><i class="fa-solid fa-person"></i>Familial</button>
-            <button><i class="fa-solid fa-heart"></i>Romantique</button>
-            <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                <div id="filtersButtons">
+                    <button class="buttonfilters"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                    <button class="buttonfilters"><i class="fa-solid fa-person"></i>Familial</button>
+                    <button class="buttonfilters"><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button class="buttonfilters"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                </div>  
         </div>
         <p class="info"><span class="borderinfo"><i class="fa-solid fa-info"></i></span>Plus de 500 logements sont
             disponibles dans cette ville</p>
