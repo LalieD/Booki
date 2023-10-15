@@ -28,7 +28,7 @@
     <main>
         <div>
             <h1 id="mainTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="centreville">En plein centre-ville ou en pleine nature</p>
+            <p id="centreVille">En plein centre-ville ou en pleine nature</p>
         </div>
         <form action="" method="get">
             <label for="recherche">
@@ -39,15 +39,14 @@
             <input type="search" name="recherche" class="search" placeholder="Marseille, France">
             <button type="submit" class="button-magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i><div>Rechercher</div></button>
         </form>
-        <!--Ajouter l'icône de la loupe pour la version mobile-->
         <div id="filters">
-            <h2>Filtres</h2>
-                <div id="filtersButtons">
-                    <button class="buttonfilters"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-                    <button class="buttonfilters"><i class="fa-solid fa-person"></i>Familial</button>
-                    <button class="buttonfilters"><i class="fa-solid fa-heart"></i>Romantique</button>
-                    <button class="buttonfilters"><i class="fa-solid fa-fire"></i>Nos pépites</button>
-                </div>  
+            <h2 id="filtersTitle">Filtres</h2>
+            <div id="filtersButtons">
+                <button class="buttonfilters"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                <button class="buttonfilters"><i class="fa-solid fa-person"></i>Familial</button>
+                <button class="buttonfilters"><i class="fa-solid fa-heart"></i>Romantique</button>
+                <button class="buttonfilters"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+            </div>  
         </div>
         <p class="info"><span class="borderinfo"><i class="fa-solid fa-info"></i></span>Plus de 500 logements sont
             disponibles dans cette ville</p>
