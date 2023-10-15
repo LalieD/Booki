@@ -26,13 +26,14 @@ header {
     align-items: center;
 }
 
-.logo {
+#logo {
     width: 61.09px;
     height: 19px;
+    margin: 15px 0 0 0;
 }
 
-header a {
-    margin-top: 28px;
+.navbar {
+    padding: 10px 0 10px 0;
 }
 
 nav {
@@ -41,31 +42,15 @@ nav {
     gap: 50px;
 }
 
-nav a {
-    position: relative;
-    text-decoration: none;
-    
+nav a {   
+    text-decoration: none; 
 }
 
-nav a:after {
-    content: "";
-    position: absolute;
-    background-color: #0065FC;
-    height: 2px;
-    width: 0;
-    left: 0;
-    top: -30px;
+nav a:hover {
+    border-top: 2px solid #0065FC;
 }
 
-nav a:hover:after{
-    width: 113px;
-}
-
-.navbar:hover {
-    color: #0065FC;
-}
-
-h1 {
+#mainTitle {
     margin-top: -130px;
 }
 
@@ -104,24 +89,24 @@ label {
     color: black;
 }
 
-.submit {
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+.button-magnifying-glass {
+    border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     font-size: 16px;
     color: white;
     font-weight: 700;
     border-color: #0065FC;
+    
 }
 
 form {
     display: flex;
     padding-top: 30px;
-    width: 377px;
+    max-width: 377px;
     height: 49px;
 }
 
-.button-magnifying-glass {
+.button-magnifying-glass i {
     display: none;
 }
 
@@ -131,7 +116,7 @@ input {
     border-radius: 15px;
 }
 
-.filtres {
+#filters {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -153,9 +138,14 @@ button {
     
 }
 
-button i {
+.buttonfilters i {
     padding-right: 12px;
 }
+
+/* 
+button i {
+    padding-right: 12px;
+} */
 
 button:after {
     background-color: #DEEBFF;
@@ -456,8 +446,7 @@ li {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     body {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0px;
     }
     
     header {
@@ -472,25 +461,36 @@ li {
     nav a {
         flex: 1;
         text-align: center;
-        background-color: #F2F2F2;
-        height: 2px;
     }
 
-    nav a:after {
-        top: 35px;
+    .navbar {
+        border-bottom: 2px solid #F2F2F2;
+    
     }
 
-    nav a:hover:after {
-        width: 100%;
+    .navbar:hover {
+        border-top: 0px;
+        border-bottom: 2px solid #0065FC;
     }
+
 
     h1 {
         font-size: 22px;
         line-height: 25.83px;
+        padding: 0 20px 0 20px;
+    }
+
+    .centreville {
+        padding: 0 20px 0 20px;
+    }
+
+    form {
+        padding: 0 20px 0 20px;
+        display: flex;
+        
     }
     
     .button-magnifying-glass {
-        display: flex;
         border-radius: 15px;
         width: 49px;
         height: 49px;
@@ -498,6 +498,8 @@ li {
         border-color: #0065FC;
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding-right: 0;
         box-shadow: 0px 4px 4px 0px #00000040;
     }
 
@@ -513,9 +515,27 @@ li {
         background-color: #0065FC;
     }
 
-    .submit {
+    .button-magnifying-glass div {
         display: none;
     }
+
+    .button-magnifying-glass i {
+        display: inline;
+    }
+
+    #filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #filtersButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 20px 0 20px;
+    }
+
+    
 
     .hebergements-and-populaires {
         display: flex;
