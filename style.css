@@ -136,20 +136,22 @@ input {
 }
 
 #filtersButtons {
-    gap: 80px;
-    
+    display: flex;
+    gap: 15px; 
 }
 
 .buttonfilters {
     background-color: white;
     border-color: #D9D9D9;
     border-radius: 25px;
-    max-width: 173px;
-    height: 50px;
+    padding: 15px 20px;
     border-style: solid;
     font-weight: 700;
     font-size: 17px;   
 }
+
+/*max-width: 173px;
+    height: 50px; */
 
 .buttonfilters i {
     padding-right: 12px;
@@ -176,7 +178,7 @@ fa-solid fa-info {
 }
 
 .borderinfo {
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     display: flex;
     justify-content: center;
@@ -184,6 +186,7 @@ fa-solid fa-info {
     border-radius: 50px;
     border: #D9D9D9 solid 1px;
     margin-right: 16px;
+    
 }
 
 .main-container {
