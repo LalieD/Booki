@@ -538,8 +538,7 @@ li {
     
     #filters {
         flex-direction: column;
-        width: 100%;
-        padding-top: 20px;
+        padding: 25px;
     }
     
     #filtersButtons {
