@@ -324,6 +324,10 @@ a {
 
 /****** Activités ***********/
 
+#globalactivites {
+    padding: 30px;
+}
+
 .activites-title {
     margin-top: 80px;
     margin-bottom: 50px;
@@ -537,8 +541,7 @@ li {
         width: 100%;
         padding-top: 20px;
     }
-
-
+    
     #filtersButtons {
         display: grid;
         grid-template-columns: 1fr 1fr;
